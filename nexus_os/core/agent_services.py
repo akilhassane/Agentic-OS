@@ -1,0 +1,452 @@
+"""
+Agent Services - Example AI Agent Services for The Wire
+
+This module demonstrates how AI agents can be implemented as dynamic services
+that integrate seamlessly with The Wire architecture.
+"""
+
+import asyncio
+import json
+import uuid
+import time
+import random
+from typing import Dict, List, Any, Optional
+from dataclasses import dataclass
+
+from .the_wire import (
+    WireService, ServiceMetadata, ServiceType, ServiceEndpoint, 
+    ServiceRequest, ServiceResponse, TheWire
+)
+
+class AIAgentService(WireService):
+    """Base class for AI Agent services"""
+    
+    def __init__(self, metadata: ServiceMetadata, wire: TheWire):
+        super().__init__(metadata, wire)
+        self.capabilities: List[str] = []
+        self.model_name = "default-ai-model"
+        self.context_window = 4096
+        
+        # Add common AI agent endpoints
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/chat",
+            handler=self.chat,
+            description="Chat with the AI agent"
+        ))
+        
+        self.add_endpoint(ServiceEndpoint(
+            method="POST", 
+            path="/analyze",
+            handler=self.analyze,
+            description="Analyze data or content"
+        ))
+        
+        self.add_endpoint(ServiceEndpoint(
+            method="GET",
+            path="/capabilities",
+            handler=self.get_capabilities,
+            description="Get agent capabilities"
+        ))
+    
+    async def initialize(self) -> bool:
+        """Initialize the AI agent"""
+        # Simulate AI model loading
+        await asyncio.sleep(0.1)
+        return True
+    
+    async def shutdown(self) -> bool:
+        """Shutdown the AI agent"""
+        return True
+    
+    async def health_check(self) -> bool:
+        """Check if the AI agent is healthy"""
+        return True
+    
+    async def chat(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Handle chat requests"""
+        message = request.data.get("message", "") if request.data else ""
+        
+        # Simulate AI processing
+        await asyncio.sleep(0.1)
+        
+        response = f"AI Agent {self.metadata.name} responds to: {message}"
+        
+        return {
+            "response": response,
+            "agent_id": self.metadata.service_id,
+            "model": self.model_name,
+            "timestamp": time.time()
+        }
+    
+    async def analyze(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Handle analysis requests"""
+        data = request.data if request.data else {}
+        
+        # Simulate analysis
+        await asyncio.sleep(0.2)
+        
+        return {
+            "analysis": f"Analysis completed by {self.metadata.name}",
+            "confidence": random.uniform(0.7, 0.95),
+            "insights": ["Insight 1", "Insight 2", "Insight 3"],
+            "agent_id": self.metadata.service_id
+        }
+    
+    async def get_capabilities(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Get agent capabilities"""
+        return {
+            "capabilities": self.capabilities,
+            "model": self.model_name,
+            "context_window": self.context_window,
+            "agent_type": self.metadata.service_type.value
+        }
+
+class CodeGeneratorAgent(AIAgentService):
+    """AI Agent specialized in code generation"""
+    
+    def __init__(self, wire: TheWire):
+        metadata = ServiceMetadata(
+            service_id=f"code-generator-{uuid.uuid4().hex[:8]}",
+            name="Code Generator Agent",
+            service_type=ServiceType.AI_AGENT,
+            version="1.0.0",
+            description="AI agent specialized in generating code",
+            tags={"capability": "code-generation", "language": "multi"}
+        )
+        super().__init__(metadata, wire)
+        
+        self.capabilities = [
+            "code_generation", "code_review", "refactoring", 
+            "documentation", "testing"
+        ]
+        self.model_name = "codegen-model-v2"
+        
+        # Add code-specific endpoints
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/generate_code",
+            handler=self.generate_code,
+            description="Generate code from requirements"
+        ))
+        
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/review_code", 
+            handler=self.review_code,
+            description="Review and suggest improvements for code"
+        ))
+    
+    async def generate_code(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Generate code based on requirements"""
+        requirements = request.data.get("requirements", "") if request.data else ""
+        language = request.data.get("language", "python") if request.data else "python"
+        
+        # Simulate code generation
+        await asyncio.sleep(0.3)
+        
+        generated_code = f"""
+# Generated by {self.metadata.name}
+# Requirements: {requirements}
+
+def generated_function():
+    '''Generated function based on requirements'''
+    # Implementation would be here
+    pass
+"""
+        
+        return {
+            "code": generated_code,
+            "language": language,
+            "agent_id": self.metadata.service_id,
+            "confidence": random.uniform(0.8, 0.95),
+            "suggestions": ["Add error handling", "Include unit tests"]
+        }
+    
+    async def review_code(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Review code and provide feedback"""
+        code = request.data.get("code", "") if request.data else ""
+        
+        # Simulate code review
+        await asyncio.sleep(0.2)
+        
+        return {
+            "review": "Code review completed",
+            "issues": [
+                {"type": "style", "message": "Consider using more descriptive variable names"},
+                {"type": "performance", "message": "This loop could be optimized"}
+            ],
+            "score": random.uniform(7.0, 9.5),
+            "agent_id": self.metadata.service_id
+        }
+
+class DataAnalysisAgent(AIAgentService):
+    """AI Agent specialized in data analysis"""
+    
+    def __init__(self, wire: TheWire):
+        metadata = ServiceMetadata(
+            service_id=f"data-analyst-{uuid.uuid4().hex[:8]}",
+            name="Data Analysis Agent", 
+            service_type=ServiceType.AI_AGENT,
+            version="1.0.0",
+            description="AI agent specialized in data analysis and insights",
+            tags={"capability": "data-analysis", "domain": "general"}
+        )
+        super().__init__(metadata, wire)
+        
+        self.capabilities = [
+            "statistical_analysis", "data_visualization", "pattern_recognition",
+            "predictive_modeling", "anomaly_detection"
+        ]
+        self.model_name = "data-analyst-model-v3"
+        
+        # Add data analysis endpoints
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/analyze_dataset",
+            handler=self.analyze_dataset,
+            description="Analyze a dataset and provide insights"
+        ))
+        
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/detect_anomalies",
+            handler=self.detect_anomalies,
+            description="Detect anomalies in data"
+        ))
+    
+    async def analyze_dataset(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Analyze a dataset"""
+        data = request.data.get("dataset", []) if request.data else []
+        
+        # Simulate data analysis
+        await asyncio.sleep(0.4)
+        
+        return {
+            "summary": {
+                "total_records": len(data),
+                "data_types": ["numerical", "categorical"],
+                "missing_values": random.randint(0, 10)
+            },
+            "insights": [
+                "Strong correlation between variables A and B",
+                "Seasonal pattern detected in time series",
+                "Outliers found in 2% of records"
+            ],
+            "recommendations": [
+                "Consider feature engineering for variable C",
+                "Remove outliers before modeling"
+            ],
+            "agent_id": self.metadata.service_id
+        }
+    
+    async def detect_anomalies(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Detect anomalies in data"""
+        data = request.data.get("data", []) if request.data else []
+        threshold = request.data.get("threshold", 0.95) if request.data else 0.95
+        
+        # Simulate anomaly detection
+        await asyncio.sleep(0.3)
+        
+        anomalies = [
+            {"index": i, "value": random.uniform(0, 100), "score": random.uniform(0.9, 1.0)}
+            for i in range(random.randint(0, 5))
+        ]
+        
+        return {
+            "anomalies": anomalies,
+            "total_anomalies": len(anomalies),
+            "threshold_used": threshold,
+            "agent_id": self.metadata.service_id
+        }
+
+class ConversationalAgent(AIAgentService):
+    """AI Agent specialized in natural conversation"""
+    
+    def __init__(self, wire: TheWire):
+        metadata = ServiceMetadata(
+            service_id=f"conversational-{uuid.uuid4().hex[:8]}",
+            name="Conversational Agent",
+            service_type=ServiceType.AI_AGENT,
+            version="1.0.0", 
+            description="AI agent specialized in natural conversation and dialogue",
+            tags={"capability": "conversation", "personality": "helpful"}
+        )
+        super().__init__(metadata, wire)
+        
+        self.capabilities = [
+            "natural_conversation", "context_awareness", "multi_turn_dialogue",
+            "sentiment_analysis", "language_understanding"
+        ]
+        self.model_name = "conversational-model-v4"
+        self.conversation_history: Dict[str, List[Dict]] = {}
+        
+        # Add conversation endpoints
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/start_conversation",
+            handler=self.start_conversation,
+            description="Start a new conversation"
+        ))
+        
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/continue_conversation",
+            handler=self.continue_conversation,
+            description="Continue an existing conversation"
+        ))
+    
+    async def start_conversation(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Start a new conversation"""
+        user_id = request.data.get("user_id", "anonymous") if request.data else "anonymous"
+        initial_message = request.data.get("message", "") if request.data else ""
+        
+        conversation_id = str(uuid.uuid4())
+        
+        # Initialize conversation history
+        self.conversation_history[conversation_id] = [
+            {"role": "user", "message": initial_message, "timestamp": time.time()}
+        ]
+        
+        # Generate response
+        response_message = f"Hello! I'm {self.metadata.name}. How can I help you today?"
+        
+        self.conversation_history[conversation_id].append({
+            "role": "assistant", 
+            "message": response_message,
+            "timestamp": time.time()
+        })
+        
+        return {
+            "conversation_id": conversation_id,
+            "response": response_message,
+            "agent_id": self.metadata.service_id,
+            "turn_number": 1
+        }
+    
+    async def continue_conversation(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Continue an existing conversation"""
+        conversation_id = request.data.get("conversation_id") if request.data else None
+        message = request.data.get("message", "") if request.data else ""
+        
+        if not conversation_id or conversation_id not in self.conversation_history:
+            return {"error": "Invalid conversation ID"}
+        
+        # Add user message to history
+        self.conversation_history[conversation_id].append({
+            "role": "user",
+            "message": message,
+            "timestamp": time.time()
+        })
+        
+        # Generate contextual response
+        await asyncio.sleep(0.1)
+        
+        turn_number = len(self.conversation_history[conversation_id]) // 2 + 1
+        response_message = f"I understand your message: '{message}'. Let me help you with that."
+        
+        self.conversation_history[conversation_id].append({
+            "role": "assistant",
+            "message": response_message, 
+            "timestamp": time.time()
+        })
+        
+        return {
+            "conversation_id": conversation_id,
+            "response": response_message,
+            "agent_id": self.metadata.service_id,
+            "turn_number": turn_number,
+            "context_length": len(self.conversation_history[conversation_id])
+        }
+
+class TaskOrchestratorAgent(AIAgentService):
+    """AI Agent that orchestrates tasks across multiple services"""
+    
+    def __init__(self, wire: TheWire):
+        metadata = ServiceMetadata(
+            service_id=f"orchestrator-{uuid.uuid4().hex[:8]}",
+            name="Task Orchestrator Agent",
+            service_type=ServiceType.ORCHESTRATOR,
+            version="1.0.0",
+            description="AI agent that orchestrates complex tasks across multiple services",
+            tags={"capability": "orchestration", "role": "coordinator"}
+        )
+        super().__init__(metadata, wire)
+        
+        self.capabilities = [
+            "task_decomposition", "service_coordination", "workflow_management",
+            "dependency_resolution", "error_handling"
+        ]
+        self.model_name = "orchestrator-model-v1"
+        
+        # Add orchestration endpoints
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/execute_workflow",
+            handler=self.execute_workflow,
+            description="Execute a complex workflow across multiple services"
+        ))
+        
+        self.add_endpoint(ServiceEndpoint(
+            method="POST",
+            path="/decompose_task",
+            handler=self.decompose_task,
+            description="Decompose a complex task into subtasks"
+        ))
+    
+    async def execute_workflow(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Execute a workflow across multiple services"""
+        workflow = request.data.get("workflow", {}) if request.data else {}
+        
+        # Simulate workflow execution
+        execution_id = str(uuid.uuid4())
+        steps = workflow.get("steps", [])
+        
+        results = []
+        for i, step in enumerate(steps):
+            # Simulate calling other services
+            step_result = {
+                "step_id": step.get("id", f"step_{i}"),
+                "status": "completed",
+                "result": f"Step {i+1} executed successfully",
+                "execution_time": random.uniform(0.1, 0.5)
+            }
+            results.append(step_result)
+            
+            # Simulate processing time
+            await asyncio.sleep(0.1)
+        
+        return {
+            "execution_id": execution_id,
+            "workflow_status": "completed",
+            "steps_executed": len(steps),
+            "results": results,
+            "total_time": sum(r["execution_time"] for r in results),
+            "agent_id": self.metadata.service_id
+        }
+    
+    async def decompose_task(self, request: ServiceRequest) -> Dict[str, Any]:
+        """Decompose a complex task into subtasks"""
+        task_description = request.data.get("task", "") if request.data else ""
+        
+        # Simulate task decomposition using AI
+        await asyncio.sleep(0.2)
+        
+        subtasks = [
+            {
+                "id": f"subtask_{i+1}",
+                "description": f"Subtask {i+1} for: {task_description}",
+                "estimated_time": random.uniform(1, 10),
+                "dependencies": [],
+                "required_services": [random.choice(["ai_agent", "compute", "storage"])]
+            }
+            for i in range(random.randint(2, 5))
+        ]
+        
+        return {
+            "original_task": task_description,
+            "subtasks": subtasks,
+            "total_subtasks": len(subtasks),
+            "estimated_total_time": sum(st["estimated_time"] for st in subtasks),
+            "agent_id": self.metadata.service_id
+        }
