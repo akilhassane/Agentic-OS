@@ -1,0 +1,31 @@
+{
+  "component_id": "scheduling_service_005",
+  "directory": "system/drivers",
+  "index": 5,
+  "enabled": true,
+  "max_workers": 6,
+  "timeout": 18.406131329430224,
+  "retry_attempts": 4,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.5184910816066489,
+    "target_throughput": 232,
+    "target_accuracy": 0.9084000383337929
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6273832,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

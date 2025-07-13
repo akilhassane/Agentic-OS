@@ -1,0 +1,31 @@
+{
+  "component_id": "agent_service_005",
+  "directory": "bootloader/components",
+  "index": 5,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 23.233823659366024,
+  "retry_attempts": 2,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.46785272183902527,
+    "target_throughput": 383,
+    "target_accuracy": 0.9154224649132697
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7168143,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

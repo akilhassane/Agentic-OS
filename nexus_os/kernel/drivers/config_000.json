@@ -1,0 +1,31 @@
+{
+  "component_id": "data_processor_000",
+  "directory": "kernel/drivers",
+  "index": 0,
+  "enabled": true,
+  "max_workers": 7,
+  "timeout": 19.59485473964343,
+  "retry_attempts": 1,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.7784676369494211,
+    "target_throughput": 636,
+    "target_accuracy": 0.8370382845751848
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.682796,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

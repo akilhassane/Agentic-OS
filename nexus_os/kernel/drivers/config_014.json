@@ -1,0 +1,31 @@
+{
+  "component_id": "agent_service_014",
+  "directory": "kernel/drivers",
+  "index": 14,
+  "enabled": true,
+  "max_workers": 6,
+  "timeout": 21.643426293398324,
+  "retry_attempts": 4,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.7664121229243464,
+    "target_throughput": 639,
+    "target_accuracy": 0.9441199269985586
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6834912,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

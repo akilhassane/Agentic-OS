@@ -1,0 +1,31 @@
+{
+  "component_id": "routing_service_003",
+  "directory": "core/tests",
+  "index": 3,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 52.545183878903075,
+  "retry_attempts": 2,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.3478600333707187,
+    "target_throughput": 298,
+    "target_accuracy": 0.8088629075588717
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.605791,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "component_id": "data_processor_011",
+  "directory": "core/docs",
+  "index": 11,
+  "enabled": true,
+  "max_workers": 7,
+  "timeout": 53.96337847134794,
+  "retry_attempts": 1,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.6581127160923139,
+    "target_throughput": 579,
+    "target_accuracy": 0.9230010105721991
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6172583,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "component_id": "monitoring_service_006",
+  "directory": "userspace/tests",
+  "index": 6,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 40.54655137170307,
+  "retry_attempts": 5,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.9104195646395374,
+    "target_throughput": 420,
+    "target_accuracy": 0.8445735340232883
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.712193,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

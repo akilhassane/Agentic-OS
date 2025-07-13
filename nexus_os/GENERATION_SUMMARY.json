@@ -1,0 +1,42 @@
+{
+  "total_files": 3100,
+  "generation_time": "2025-07-13 16:33:23",
+  "directories": {
+    "core/ai_engine": 100,
+    "core/agents": 100,
+    "core/services": 100,
+    "core/utils": 100,
+    "core/models": 100,
+    "core/api": 100,
+    "core/tests": 100,
+    "core/config": 100,
+    "core/docs": 100,
+    "system/kernel": 100,
+    "system/drivers": 100,
+    "system/services": 100,
+    "system/utils": 100,
+    "system/tests": 100,
+    "ui/components": 100,
+    "ui/screens": 100,
+    "ui/utils": 100,
+    "ui/tests": 100,
+    "ui/assets": 100,
+    "ui/styles": 100,
+    "kernel/modules": 100,
+    "kernel/drivers": 100,
+    "kernel/utils": 100,
+    "kernel/tests": 100,
+    "userspace/apps": 100,
+    "userspace/services": 100,
+    "userspace/utils": 100,
+    "userspace/tests": 100,
+    "bootloader/components": 100,
+    "bootloader/utils": 100,
+    "bootloader/tests": 100
+  },
+  "file_types": {
+    ".py": 2325,
+    ".json": 465,
+    ".md": 310
+  }
+}

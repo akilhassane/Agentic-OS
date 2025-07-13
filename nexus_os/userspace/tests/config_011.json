@@ -1,0 +1,31 @@
+{
+  "component_id": "network_service_011",
+  "directory": "userspace/tests",
+  "index": 11,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 27.912228840559596,
+  "retry_attempts": 1,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.9357993327110145,
+    "target_throughput": 545,
+    "target_accuracy": 0.911977177192066
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7124712,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

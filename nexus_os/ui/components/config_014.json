@@ -1,0 +1,31 @@
+{
+  "component_id": "storage_service_014",
+  "directory": "ui/components",
+  "index": 14,
+  "enabled": true,
+  "max_workers": 5,
+  "timeout": 57.600720332913035,
+  "retry_attempts": 5,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.12745338904432654,
+    "target_throughput": 207,
+    "target_accuracy": 0.895952810596979
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6490543,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

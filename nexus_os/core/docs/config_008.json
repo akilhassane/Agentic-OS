@@ -1,0 +1,31 @@
+{
+  "component_id": "metrics_service_008",
+  "directory": "core/docs",
+  "index": 8,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 36.52794238788475,
+  "retry_attempts": 3,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.6260901252052783,
+    "target_throughput": 596,
+    "target_accuracy": 0.9216464351420164
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6170928,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

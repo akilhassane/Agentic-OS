@@ -1,0 +1,31 @@
+{
+  "component_id": "collaboration_service_004",
+  "directory": "core/ai_engine",
+  "index": 4,
+  "enabled": true,
+  "max_workers": 4,
+  "timeout": 17.76461441326134,
+  "retry_attempts": 1,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.6111399525693034,
+    "target_throughput": 219,
+    "target_accuracy": 0.9725777104209385
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.5704918,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

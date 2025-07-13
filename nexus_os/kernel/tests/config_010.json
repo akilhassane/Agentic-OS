@@ -1,0 +1,31 @@
+{
+  "component_id": "orchestration_service_010",
+  "directory": "kernel/tests",
+  "index": 10,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 27.847357036415453,
+  "retry_attempts": 3,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.9080132482306393,
+    "target_throughput": 570,
+    "target_accuracy": 0.916897387775672
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6930718,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "component_id": "data_processor_000",
+  "directory": "bootloader/tests",
+  "index": 0,
+  "enabled": true,
+  "max_workers": 4,
+  "timeout": 32.907048310274405,
+  "retry_attempts": 1,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.816004732008793,
+    "target_throughput": 425,
+    "target_accuracy": 0.9095839768918352
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7259128,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

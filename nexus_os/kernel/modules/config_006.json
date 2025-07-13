@@ -1,0 +1,31 @@
+{
+  "component_id": "nlp_processor_006",
+  "directory": "kernel/modules",
+  "index": 6,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 22.288379070233276,
+  "retry_attempts": 5,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.26893540693573925,
+    "target_throughput": 495,
+    "target_accuracy": 0.9034450735265225
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6784434,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

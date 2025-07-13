@@ -1,0 +1,31 @@
+{
+  "component_id": "vision_processor_004",
+  "directory": "userspace/services",
+  "index": 4,
+  "enabled": true,
+  "max_workers": 5,
+  "timeout": 37.84375976467912,
+  "retry_attempts": 1,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.5619794149503844,
+    "target_throughput": 148,
+    "target_accuracy": 0.8843789524628134
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7026281,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "component_id": "ml_model_013",
+  "directory": "core/api",
+  "index": 13,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 10.512268715034553,
+  "retry_attempts": 4,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.6428443011148232,
+    "target_throughput": 763,
+    "target_accuracy": 0.8156298865431719
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6009648,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

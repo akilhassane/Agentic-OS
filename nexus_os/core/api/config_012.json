@@ -1,0 +1,31 @@
+{
+  "component_id": "monitoring_service_012",
+  "directory": "core/api",
+  "index": 12,
+  "enabled": true,
+  "max_workers": 6,
+  "timeout": 23.645979439101076,
+  "retry_attempts": 2,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.16555712302122894,
+    "target_throughput": 755,
+    "target_accuracy": 0.8266598378138612
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6009097,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

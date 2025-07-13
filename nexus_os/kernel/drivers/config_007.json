@@ -1,0 +1,31 @@
+{
+  "component_id": "routing_service_007",
+  "directory": "kernel/drivers",
+  "index": 7,
+  "enabled": true,
+  "max_workers": 6,
+  "timeout": 36.57782439914041,
+  "retry_attempts": 4,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.46247611708337744,
+    "target_throughput": 242,
+    "target_accuracy": 0.958417339836926
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6831696,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

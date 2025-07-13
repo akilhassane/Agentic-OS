@@ -1,0 +1,31 @@
+{
+  "component_id": "network_service_001",
+  "directory": "system/services",
+  "index": 1,
+  "enabled": true,
+  "max_workers": 2,
+  "timeout": 33.57438719586557,
+  "retry_attempts": 2,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.29008981645559195,
+    "target_throughput": 821,
+    "target_accuracy": 0.9829147910440972
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6328144,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

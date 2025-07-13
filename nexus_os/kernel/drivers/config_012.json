@@ -1,0 +1,31 @@
+{
+  "component_id": "vision_processor_012",
+  "directory": "kernel/drivers",
+  "index": 12,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 24.01333574861056,
+  "retry_attempts": 2,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.6918090345235675,
+    "target_throughput": 387,
+    "target_accuracy": 0.8468561187080643
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6833925,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

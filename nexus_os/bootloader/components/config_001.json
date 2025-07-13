@@ -1,0 +1,31 @@
+{
+  "component_id": "security_service_001",
+  "directory": "bootloader/components",
+  "index": 1,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 57.01134590642963,
+  "retry_attempts": 1,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.9973258522906783,
+    "target_throughput": 893,
+    "target_accuracy": 0.8815067732332895
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7166116,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

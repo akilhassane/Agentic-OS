@@ -1,0 +1,31 @@
+{
+  "component_id": "nlp_processor_014",
+  "directory": "system/drivers",
+  "index": 14,
+  "enabled": true,
+  "max_workers": 4,
+  "timeout": 21.935267990793076,
+  "retry_attempts": 5,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.7568543614897731,
+    "target_throughput": 478,
+    "target_accuracy": 0.9313722067408903
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6279023,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

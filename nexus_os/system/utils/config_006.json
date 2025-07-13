@@ -1,0 +1,31 @@
+{
+  "component_id": "scheduling_service_006",
+  "directory": "system/utils",
+  "index": 6,
+  "enabled": true,
+  "max_workers": 2,
+  "timeout": 31.726238952843012,
+  "retry_attempts": 2,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.22514894219391993,
+    "target_throughput": 722,
+    "target_accuracy": 0.9297150265270056
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.638304,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

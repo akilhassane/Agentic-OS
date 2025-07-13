@@ -1,0 +1,31 @@
+{
+  "component_id": "vision_processor_012",
+  "directory": "bootloader/utils",
+  "index": 12,
+  "enabled": true,
+  "max_workers": 2,
+  "timeout": 42.277196646124445,
+  "retry_attempts": 5,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.28429217095056913,
+    "target_throughput": 510,
+    "target_accuracy": 0.815945076179726
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7219136,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

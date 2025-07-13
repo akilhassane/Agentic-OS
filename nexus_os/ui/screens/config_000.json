@@ -1,0 +1,31 @@
+{
+  "component_id": "collaboration_service_000",
+  "directory": "ui/screens",
+  "index": 0,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 26.726773682466888,
+  "retry_attempts": 4,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.8186678987083874,
+    "target_throughput": 755,
+    "target_accuracy": 0.8836429268708492
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6532185,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

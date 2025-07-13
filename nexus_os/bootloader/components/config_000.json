@@ -1,0 +1,31 @@
+{
+  "component_id": "audio_processor_000",
+  "directory": "bootloader/components",
+  "index": 0,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 15.276763927998484,
+  "retry_attempts": 2,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.30530029045021284,
+    "target_throughput": 941,
+    "target_accuracy": 0.9406823697786117
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7165446,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

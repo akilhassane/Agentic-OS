@@ -1,0 +1,31 @@
+{
+  "component_id": "ml_model_014",
+  "directory": "bootloader/tests",
+  "index": 14,
+  "enabled": true,
+  "max_workers": 5,
+  "timeout": 15.859411465845637,
+  "retry_attempts": 5,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.9751448016755576,
+    "target_throughput": 657,
+    "target_accuracy": 0.9583608689859635
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7267342,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

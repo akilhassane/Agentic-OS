@@ -1,0 +1,31 @@
+{
+  "component_id": "learning_service_011",
+  "directory": "system/drivers",
+  "index": 11,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 51.91284402494813,
+  "retry_attempts": 2,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.8210772820971967,
+    "target_throughput": 590,
+    "target_accuracy": 0.8706875634869718
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.627737,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

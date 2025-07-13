@@ -1,0 +1,31 @@
+{
+  "component_id": "audio_processor_010",
+  "directory": "ui/utils",
+  "index": 10,
+  "enabled": true,
+  "max_workers": 7,
+  "timeout": 35.05558361728629,
+  "retry_attempts": 4,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.9536453496370869,
+    "target_throughput": 809,
+    "target_accuracy": 0.978244481312255
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6588557,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

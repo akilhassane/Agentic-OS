@@ -1,0 +1,31 @@
+{
+  "component_id": "logging_service_007",
+  "directory": "ui/screens",
+  "index": 7,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 29.871717516018307,
+  "retry_attempts": 1,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.14056091181095937,
+    "target_throughput": 240,
+    "target_accuracy": 0.8078148540517617
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6536498,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

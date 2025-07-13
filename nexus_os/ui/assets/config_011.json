@@ -1,0 +1,31 @@
+{
+  "component_id": "optimization_service_011",
+  "directory": "ui/assets",
+  "index": 11,
+  "enabled": true,
+  "max_workers": 4,
+  "timeout": 19.02134603196577,
+  "retry_attempts": 1,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.6912610749558379,
+    "target_throughput": 249,
+    "target_accuracy": 0.8259572865419432
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.668833,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

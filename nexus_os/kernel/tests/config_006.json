@@ -1,0 +1,31 @@
+{
+  "component_id": "logging_service_006",
+  "directory": "kernel/tests",
+  "index": 6,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 47.4295061542348,
+  "retry_attempts": 4,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.3042538919554766,
+    "target_throughput": 240,
+    "target_accuracy": 0.9098427794035747
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6928306,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

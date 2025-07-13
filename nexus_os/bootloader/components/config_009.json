@@ -1,0 +1,31 @@
+{
+  "component_id": "metrics_service_009",
+  "directory": "bootloader/components",
+  "index": 9,
+  "enabled": true,
+  "max_workers": 2,
+  "timeout": 39.03970946631807,
+  "retry_attempts": 1,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.9472630551271523,
+    "target_throughput": 837,
+    "target_accuracy": 0.8642795838032944
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7170105,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

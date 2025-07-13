@@ -1,0 +1,31 @@
+{
+  "component_id": "security_service_008",
+  "directory": "core/config",
+  "index": 8,
+  "enabled": true,
+  "max_workers": 2,
+  "timeout": 27.2044688175102,
+  "retry_attempts": 2,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.7752198022628515,
+    "target_throughput": 609,
+    "target_accuracy": 0.9735420203770331
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6117046,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "component_id": "agent_service_004",
+  "directory": "core/tests",
+  "index": 4,
+  "enabled": true,
+  "max_workers": 6,
+  "timeout": 31.033486261592564,
+  "retry_attempts": 1,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.47125591528615696,
+    "target_throughput": 837,
+    "target_accuracy": 0.97169373359887
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6058595,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

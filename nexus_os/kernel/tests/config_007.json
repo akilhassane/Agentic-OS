@@ -1,0 +1,31 @@
+{
+  "component_id": "learning_service_007",
+  "directory": "kernel/tests",
+  "index": 7,
+  "enabled": true,
+  "max_workers": 7,
+  "timeout": 20.359892826102513,
+  "retry_attempts": 5,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.43706256560724355,
+    "target_throughput": 911,
+    "target_accuracy": 0.8506345331921565
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.692885,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

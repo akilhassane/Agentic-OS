@@ -1,0 +1,31 @@
+{
+  "component_id": "orchestration_service_011",
+  "directory": "ui/styles",
+  "index": 11,
+  "enabled": true,
+  "max_workers": 7,
+  "timeout": 32.74789361337665,
+  "retry_attempts": 1,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.11352078395875106,
+    "target_throughput": 674,
+    "target_accuracy": 0.8363436212382334
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.673953,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

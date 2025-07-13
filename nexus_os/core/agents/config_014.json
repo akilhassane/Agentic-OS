@@ -1,0 +1,31 @@
+{
+  "component_id": "communication_service_014",
+  "directory": "core/agents",
+  "index": 14,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 57.592009970644625,
+  "retry_attempts": 2,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.31987868134772335,
+    "target_throughput": 629,
+    "target_accuracy": 0.8770832275080322
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.5773,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

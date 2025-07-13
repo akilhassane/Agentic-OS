@@ -1,0 +1,31 @@
+{
+  "component_id": "optimization_service_006",
+  "directory": "system/services",
+  "index": 6,
+  "enabled": true,
+  "max_workers": 7,
+  "timeout": 10.596451903395916,
+  "retry_attempts": 3,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.39418404116230077,
+    "target_throughput": 984,
+    "target_accuracy": 0.9408162410159354
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6331246,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

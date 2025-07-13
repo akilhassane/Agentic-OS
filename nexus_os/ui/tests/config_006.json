@@ -1,0 +1,31 @@
+{
+  "component_id": "security_service_006",
+  "directory": "ui/tests",
+  "index": 6,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 39.52152274987607,
+  "retry_attempts": 3,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.21587459167155387,
+    "target_throughput": 161,
+    "target_accuracy": 0.9664141856424857
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6635878,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

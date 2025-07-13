@@ -1,0 +1,31 @@
+{
+  "component_id": "logging_service_000",
+  "directory": "bootloader/utils",
+  "index": 0,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 21.432817422614114,
+  "retry_attempts": 5,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.3736811783788946,
+    "target_throughput": 637,
+    "target_accuracy": 0.9503518753203399
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7212222,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

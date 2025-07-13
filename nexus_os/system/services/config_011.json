@@ -1,0 +1,31 @@
+{
+  "component_id": "learning_service_011",
+  "directory": "system/services",
+  "index": 11,
+  "enabled": true,
+  "max_workers": 6,
+  "timeout": 24.5401672626175,
+  "retry_attempts": 1,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.4641459433850621,
+    "target_throughput": 112,
+    "target_accuracy": 0.9417303642919839
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6334498,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

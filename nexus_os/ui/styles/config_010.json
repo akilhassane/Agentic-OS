@@ -1,0 +1,31 @@
+{
+  "component_id": "security_service_010",
+  "directory": "ui/styles",
+  "index": 10,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 35.53815638165479,
+  "retry_attempts": 4,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.9507520274149558,
+    "target_throughput": 112,
+    "target_accuracy": 0.9359534266029637
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6739073,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

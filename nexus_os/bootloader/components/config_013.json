@@ -1,0 +1,31 @@
+{
+  "component_id": "scheduling_service_013",
+  "directory": "bootloader/components",
+  "index": 13,
+  "enabled": true,
+  "max_workers": 8,
+  "timeout": 45.44380952912742,
+  "retry_attempts": 2,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.4036724268772346,
+    "target_throughput": 575,
+    "target_accuracy": 0.9822075984196438
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7172256,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

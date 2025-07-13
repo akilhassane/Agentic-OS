@@ -1,0 +1,31 @@
+{
+  "component_id": "caching_service_004",
+  "directory": "core/config",
+  "index": 4,
+  "enabled": true,
+  "max_workers": 2,
+  "timeout": 34.236646902044555,
+  "retry_attempts": 2,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.6970120661878044,
+    "target_throughput": 967,
+    "target_accuracy": 0.9158555801656189
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6114552,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

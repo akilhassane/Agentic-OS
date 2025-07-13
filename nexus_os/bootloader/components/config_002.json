@@ -1,0 +1,31 @@
+{
+  "component_id": "routing_service_002",
+  "directory": "bootloader/components",
+  "index": 2,
+  "enabled": true,
+  "max_workers": 6,
+  "timeout": 24.686264127303804,
+  "retry_attempts": 5,
+  "optimization_level": "balanced",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.5989727107985096,
+    "target_throughput": 658,
+    "target_accuracy": 0.9688657798854249
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.71666,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

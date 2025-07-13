@@ -1,0 +1,31 @@
+{
+  "component_id": "storage_service_010",
+  "directory": "bootloader/utils",
+  "index": 10,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 15.50530185093629,
+  "retry_attempts": 2,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.35215736543053555,
+    "target_throughput": 153,
+    "target_accuracy": 0.8737775661863653
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.7218046,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

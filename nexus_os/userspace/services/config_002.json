@@ -1,0 +1,31 @@
+{
+  "component_id": "logging_service_002",
+  "directory": "userspace/services",
+  "index": 2,
+  "enabled": true,
+  "max_workers": 2,
+  "timeout": 22.68699685526593,
+  "retry_attempts": 2,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.47924894062920675,
+    "target_throughput": 996,
+    "target_accuracy": 0.9386194082320144
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.702515,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

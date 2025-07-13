@@ -1,0 +1,31 @@
+{
+  "component_id": "monitoring_service_009",
+  "directory": "kernel/modules",
+  "index": 9,
+  "enabled": true,
+  "max_workers": 4,
+  "timeout": 42.98556486235653,
+  "retry_attempts": 2,
+  "optimization_level": "efficiency",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.475802286729924,
+    "target_throughput": 560,
+    "target_accuracy": 0.9669257653600657
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.678604,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}

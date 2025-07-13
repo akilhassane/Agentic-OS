@@ -1,0 +1,31 @@
+{
+  "component_id": "metrics_service_001",
+  "directory": "system/drivers",
+  "index": 1,
+  "enabled": true,
+  "max_workers": 3,
+  "timeout": 29.399921778267643,
+  "retry_attempts": 3,
+  "optimization_level": "performance",
+  "features": {
+    "ai_enhanced": true,
+    "self_learning": true,
+    "adaptive_optimization": true,
+    "real_time_processing": true
+  },
+  "performance_metrics": {
+    "target_latency": 0.29977083850720376,
+    "target_throughput": 182,
+    "target_accuracy": 0.8150741006317082
+  },
+  "dependencies": [
+    "core_engine",
+    "ai_processor",
+    "data_manager"
+  ],
+  "metadata": {
+    "created_at": 1752424403.6271546,
+    "version": "1.0.0",
+    "author": "AgenticOS Team"
+  }
+}
