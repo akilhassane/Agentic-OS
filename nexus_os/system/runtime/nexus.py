@@ -50,7 +50,10 @@ class NexusKernel:
         self.resource_monitor = None
         self.thread_pool = None
         self.process_pool = None
-        self.max_workers = multiprocessing.cpu_count() * 2
+        
+        # Get CPU count with fallback
+        cpu_count = multiprocessing.cpu_count()
+        self.max_workers = cpu_count * 2 if cpu_count else 4
         
         # Set maximum resource limits
         self._configure_resources()
@@ -91,7 +94,7 @@ class NexusKernel:
         disk = psutil.disk_usage('/')
         
         return SystemResources(
-            cpu_count=psutil.cpu_count(logical=True),
+            cpu_count=psutil.cpu_count(logical=True) or 1,
             memory_total=memory.total,
             memory_available=memory.available,
             disk_total=disk.total,
@@ -128,23 +131,28 @@ class NexusKernel:
     
     async def _start_core_services(self):
         """Start essential system services"""
-        from .network_stack import NetworkStack
-        from .app_manager import AppManager
-        from .security_manager import SecurityManager
-        
-        # Initialize core services
-        self.services['network'] = NetworkStack()
-        self.services['apps'] = AppManager()
-        self.services['security'] = SecurityManager()
-        
-        # Start all services
-        for name, service in self.services.items():
-            try:
-                await service.start()
-                logger.info(f"Service '{name}' started")
-            except Exception as e:
-                logger.error(f"Failed to start service '{name}': {e}")
-                # Continue with other services
+        try:
+            from .network_stack import NetworkStack
+            from .app_manager import AppManager
+            from .security_manager import SecurityManager
+            
+            # Initialize core services
+            self.services['network'] = NetworkStack()
+            self.services['apps'] = AppManager()
+            self.services['security'] = SecurityManager()
+            
+            # Start all services
+            for name, service in self.services.items():
+                try:
+                    await service.start()
+                    logger.info(f"Service '{name}' started")
+                except Exception as e:
+                    logger.error(f"Failed to start service '{name}': {e}")
+                    # Continue with other services
+        except ImportError as e:
+            logger.error(f"Failed to import core services: {e}")
+            # Create minimal fallback services
+            self.services = {}
     
     async def _kernel_tick(self):
         """Main kernel tick - handles system operations"""
